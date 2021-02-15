@@ -1,10 +1,10 @@
-package com.example.viewpager2presentation
+package com.example.viewpager2demo
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.viewpager2presentation.databinding.ActivityMainBinding
+import com.example.viewpager2demo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

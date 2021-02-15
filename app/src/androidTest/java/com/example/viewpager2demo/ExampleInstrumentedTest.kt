@@ -1,4 +1,4 @@
-package com.example.viewpager2presentation
+package com.example.viewpager2demo
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

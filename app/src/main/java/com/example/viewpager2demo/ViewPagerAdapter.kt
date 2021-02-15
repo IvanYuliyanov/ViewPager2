@@ -1,9 +1,9 @@
-package com.example.viewpager2presentation
+package com.example.viewpager2demo
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.viewpager2presentation.databinding.ViewPagerItemBinding
+import com.example.viewpager2demo.databinding.ViewPagerItemBinding
 
 class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
 
