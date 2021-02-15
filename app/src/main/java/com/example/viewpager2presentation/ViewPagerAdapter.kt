@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.viewpager2presentation.databinding.ViewPagerItemBinding
 
 class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
+
 	private val actorsList = ArrayList<Actor>()
 
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder = ViewHolder.from(parent)
@@ -17,9 +18,7 @@ class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
 
 	override fun getItemCount(): Int = actorsList.size
 
-	override fun getItemId(position: Int): Long {
-		return actorsList[position].imageId.toLong()
-	}
+	override fun getItemId(position: Int): Long = actorsList[position].imageId.toLong()
 
 	fun setItems(newActorsList: ArrayList<Actor>) {
 		actorsList.clear()
@@ -35,6 +34,7 @@ class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
 		}
 
 		companion object {
+
 			fun from(parent: ViewGroup): ViewHolder {
 				val binding = ViewPagerItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 

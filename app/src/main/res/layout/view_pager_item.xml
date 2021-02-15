@@ -4,19 +4,19 @@
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:paddingStart="8dp"
-		android:paddingEnd="8dp">
+		android:paddingEnd="8dp"
+		android:paddingStart="8dp">
 
 		<TextView
 			android:id="@+id/actor_name_text_view"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="32dp"
-			android:textSize="22sp"
 			android:fontFamily="sans-serif-condensed"
-			app:layout_constraintStart_toStartOf="parent"
+			android:textSize="22sp"
 			app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintTop_toTopOf="parent"/>
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
 
 		<androidx.cardview.widget.CardView
 			android:id="@+id/actor_image_container"
@@ -24,15 +24,15 @@
 			android:layout_height="wrap_content"
 			android:layout_marginTop="8dp"
 			app:cardCornerRadius="10dp"
-			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/actor_name_text_view">
 
 			<ImageView
 				android:id="@+id/actor_image_view"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:scaleType="fitXY"/>
+				android:scaleType="fitXY" />
 		</androidx.cardview.widget.CardView>
 
 	</androidx.constraintlayout.widget.ConstraintLayout>

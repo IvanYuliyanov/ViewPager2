@@ -1,7 +1,8 @@
 package com.example.viewpager2presentation
 
 object Constants {
-	fun getActors() : ArrayList<Actor> {
+
+	fun getActors(): ArrayList<Actor> {
 		val actorsArray = arrayListOf<Actor>()
 
 		actorsArray.add(Actor("Brat Pitt", R.drawable.brad_pitt))

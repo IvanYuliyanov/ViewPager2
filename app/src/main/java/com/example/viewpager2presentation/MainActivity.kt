@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
 
 	private fun setViewPagerAdapter() {
 		val actorsArray = Constants.getActors()
-		binding.viewPager.let {
-			val adapter = ViewPagerAdapter()
-			it.adapter = adapter
+		val adapter = ViewPagerAdapter()
+		binding.viewPager.let { viewPager ->
+			viewPager.adapter = adapter
 			adapter.setItems(actorsArray)
 		}
 	}
