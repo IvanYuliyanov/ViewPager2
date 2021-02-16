@@ -7,7 +7,7 @@ import com.example.viewpager2demo.databinding.ViewPagerItemBinding
 
 class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
 
-	private val actorsList = ArrayList<Actor>()
+	private var actorsList = ArrayList<Actor>()
 
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder = ViewHolder.from(parent)
 
@@ -21,8 +21,7 @@ class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
 	override fun getItemId(position: Int): Long = actorsList[position].imageId.toLong()
 
 	fun setItems(newActorsList: ArrayList<Actor>) {
-		actorsList.clear()
-		actorsList.addAll(newActorsList)
+		actorsList = newActorsList
 		notifyDataSetChanged()
 	}
 
