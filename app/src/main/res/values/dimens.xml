@@ -2,4 +2,9 @@
 <resources>
 	<dimen name="image_width">300dp</dimen>
 	<dimen name="image_height">250dp</dimen>
+	<dimen name="padding_8dp">8dp</dimen>
+	<dimen name="margin_8dp">8dp</dimen>
+	<dimen name="margin_32dp">32dp</dimen>
+	<dimen name="actor_image_corner_radius_10dp">10dp</dimen>
+	<dimen name="actor_name_text_size_22sp">22sp</dimen>
 </resources>

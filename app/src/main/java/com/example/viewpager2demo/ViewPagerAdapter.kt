@@ -7,7 +7,7 @@ import com.example.viewpager2demo.databinding.ViewPagerItemBinding
 
 class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
 
-	private var actorsList = ArrayList<Actor>()
+	private var actorsList = arrayListOf<Actor>()
 
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder = ViewHolder.from(parent)
 

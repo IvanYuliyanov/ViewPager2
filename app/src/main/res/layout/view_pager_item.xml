@@ -4,16 +4,16 @@
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:paddingEnd="8dp"
-		android:paddingStart="8dp">
+		android:paddingEnd="@dimen/padding_8dp"
+		android:paddingStart="@dimen/padding_8dp">
 
 		<TextView
 			android:id="@+id/actor_name_text_view"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="32dp"
+			android:layout_marginTop="@dimen/margin_32dp"
 			android:fontFamily="sans-serif-condensed"
-			android:textSize="22sp"
+			android:textSize="@dimen/actor_name_text_size_22sp"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toTopOf="parent" />
@@ -22,8 +22,8 @@
 			android:id="@+id/actor_image_container"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="8dp"
-			app:cardCornerRadius="10dp"
+			android:layout_marginTop="@dimen/margin_8dp"
+			app:cardCornerRadius="@dimen/actor_image_corner_radius_10dp"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toBottomOf="@+id/actor_name_text_view">
