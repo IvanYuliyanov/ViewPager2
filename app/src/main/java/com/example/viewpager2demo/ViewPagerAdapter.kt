@@ -2,6 +2,7 @@ package com.example.viewpager2demo
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.viewpager2demo.databinding.ViewPagerItemBinding
 
@@ -21,8 +22,10 @@ class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
 	override fun getItemId(position: Int): Long = actorsList[position].imageId.toLong()
 
 	fun setItems(newActorsList: ArrayList<Actor>) {
+		val pageDiffUtil = PageDiffUtil(actorsList, newActorsList)
+		val result = DiffUtil.calculateDiff(pageDiffUtil)
 		actorsList = newActorsList
-		notifyDataSetChanged()
+		result.dispatchUpdatesTo(this)
 	}
 
 	class ViewHolder(private val binding: ViewPagerItemBinding) : RecyclerView.ViewHolder(binding.root) {
